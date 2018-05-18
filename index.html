@@ -1,0 +1,1273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+    <link rel="stylesheet" href="lib/scrollbar.min.css" />
+    <link rel="stylesheet" href="lib/template.css">
+    
+
+    <link rel="stylesheet" href="css/index.css">
+
+    <script src="lib/jquery-1.11.3.min.js"></script>
+    <script src="lib/bootstrap.min.js"></script>
+    <script src="lib/knockout-3.4.2.min.js"></script>
+    <script src="lib/scrollbar.min.js"></script>
+    
+</head>
+<body>
+    <div class="container-fluid" id="container">
+    	
+    	<button class="btn btn-primary btn-round back-btn" type="submit">返回产品结构</button>
+        
+        <!--产品结构table-->
+        <div class="layout-table app">
+            <div class="layout-table-header blue">
+                <span class="span-7"></span>
+                <span class="span-10">
+                    	肯耐珂萨四层产品结构-2018版
+                </span>
+                <span class="span-7"></span>
+            </div>
+            <div class="layout-table-content tbl tbl-simple tbl-striped">
+                <div class="tbl-header blue">
+                    <table>
+                        <colgroup>
+                            <col style="width: 150px;">
+                            <col style="width: 700px;">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <td rowspan="2" class="blue">
+                                    <span>四层结构</span>
+                                </td>
+                                <td class="blue">
+                                    <span>产品分类</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="blue">
+                                    <span>（按实际产品勾选）</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="tbl-content">
+                    <table>
+                        <colgroup>
+                            <col style="width: 150px;">
+                            <col style="width: 700px;">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <td rowspan="5" class="blue">组织发展云</td>
+                                <td class="bf lf hf" id="1">组织能力打造（含诊断/调研）</td>
+                            </tr>
+                            <tr>
+                                <td class="bf lf hf" id="2">员工敬业度/满意度及其他调研</td>
+                            </tr>
+                            <tr>
+                                <td class="bf lf hf" id="3">企业文化建设</td>
+                            </tr>
+                            <tr>
+                                <td class="bf lf hf" id="4">3P（岗位/薪酬/绩效）</td>
+                            </tr>
+                            <tr>
+                                <td class="bf lf hf" id="5">VX系统（敬业度调研，文化诊断，组织能力调研，绩效，薪酬）</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="5" class="blue">人才管理云</td>
+                                <td class="bf lf hf" id="6">人才发展+（任职资格/建模/测评/人才盘点）</td>
+                            </tr>  
+                            <tr>
+                                <td class="bf lf hf" id="7">公开课+移动学习支持云平台（KTouch）软件服务</td>
+                            </tr> 
+                            <tr>
+                                <td class="bf lf hf" id="8">定制内训+移动学习支持云平台（KTouch）软件服务</td>
+                            </tr>
+                            <tr>
+                                <td class="bf lf hf" id="9">学习发展项目（学习地图/行动学习/明星经理人/沙盘魔方/教练等）+KTouch软件服务</td>
+                            </tr>
+                            <tr>
+                                <td class="bf lf hf" id="10">VX系统（学习地图，培训管理，学习行动计划，能力建模，人才盘点，绩效管理）</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="3" class="blue">招聘管理云</td>
+                                <td class="bf lf hf" id="11">肯耐珂萨猎聘+VX系统（招聘管理）</td>
+                            </tr>
+                            <tr>
+                                <td class="bf lf hf" id="12">RPO招聘流程外包+VX系统（招聘管理）</td>
+                            </tr>
+                            <tr>
+                                <td class="bf lf hf" id="13">VX系统（招聘管理，测评，简历解析，内部推荐）</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="2" class="blue last">人事管理云</td>
+                                <td class="bf lf hf" id="14">HRO灵活用工+VX系统</td>
+                            </tr>
+                            <tr>
+                                <td class="bf lf hf last" id="15">VX系统（人事，组织，薪酬，休假，考勤，加班，公出等）</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+        
+        <!--报价汇总表-->
+    	<div class="layout-table total">
+            <div class="layout-table-header blue">
+                <span class="span-7"></span>
+                <span class="span-10">
+                    	报价汇总
+                </span>
+                <span class="span-7"></span>
+            </div>
+            <div class="layout-table-content tbl tbl-simple tbl-striped">
+                <div class="tbl-header blue total-header">
+                    <table>
+                        <colgroup>
+                        	<col style="width: 59px;">
+                        	<col style="width: 131px;">
+                            <col style="width: 140px;">
+                            <col style="width: 170px;">
+                            <col style="width: 130px;">
+                            <col style="width: 200px;">
+                            <col style="width: 240px;">
+                            <col style="width: 560px;">
+                            <col style="width: 178px;">
+                            <col style="width: 59px;">
+                        </colgroup>
+                        <tbody>
+                            <tr class="head-tr">
+                                <td class="blue">
+                                    <span>序号</span>
+                                </td>
+                                <td class="blue">
+                                    <span>服务内容交付物</span>
+                                </td>
+                                <td class="blue">
+                                    <span>服务内容交付物</span>
+                                </td>
+                                <td class="blue">
+                                    <span>交付物（标准项目包)</span>
+                                </td>
+                                <td class="blue">
+                                    <span>服务内容交付物</span>
+                                </td>
+                                <td class="blue">
+                                    <span>交付物（服务内容交付物）</span>
+                                </td>
+                                <td class="blue">
+                                    <span>服务内容交付物服务内容交付物</span>
+                                </td>
+                                <td class="blue">
+                                    <span>服务内容交付物服务内容交付物服务内容交付物服务内容交付物</span>
+                                </td>
+                                <td class="blue">
+                                    <span>服务内容交付物付物</span>
+                                </td>
+                                <td class="blue">
+									<span>操作</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="tbl-content total-content">
+                    <table>
+                        <colgroup>
+                            <col style="width: 59px;">
+                            <col style="width: 131px;">
+                            <col style="width: 140px;">
+                            <col style="width: 170px;">
+                            <col style="width: 130px;">
+                            <col style="width: 200px;">
+                            <col style="width: 240px;">
+                            <col style="width: 560px;">
+                            <col style="width: 178px;">
+                            <col style="width: 59px;">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <td class="bf first">0</td>
+                                <td class="bf">系统平台</td>
+                                <td class="input-bf input-box">系统搭建及租用</td>
+                                <td class="bf lf">系统平台搭建&2018年调研平台使用租金</td>
+                                <td class="bf">60000/年</td>
+                                <td class="input-bf">系统平台</td>
+                                <td class="bf">2018年调研平台使用租金</td>
+                                <td class="input-bf">2018年调研平台使用租金2018年调研平台使用租金2018年调研平台使用租金</td>
+                                <td class="bf">60000/年</td>
+                                <td class="remove-bf">移除</td>
+                            </tr>
+                            <tr>
+                                <td class="bf first">1</td>
+                                <td class="bf">系统平台</td>
+                                <td class="input-bf input-box">系统搭建及租用</td>
+                                <td class="bf lf">系统平台搭建&2018年调研平台使用租金</td>
+                                <td class="bf">60000/年</td>
+                                <td class="input-bf">系统平台</td>
+                                <td class="bf">2018年调研平台使用租金</td>
+                                <td class="input-bf">2018年调研平台使用租金2018年调研平台使用租金2018年调研平台使用租金</td>
+                                <td class="bf">60000/年</td>
+                                <td class="remove-bf">移除</td>
+                            </tr>
+                            <tr>
+                                <td class="bf first">2</td>
+                                <td class="bf">系统平台</td>
+                                <td class="input-bf input-box">系统搭建及租用</td>
+                                <td class="bf lf">系统平台搭建&2018年调研平台使用租金</td>
+                                <td class="bf">60000/年</td>
+                                <td class="input-bf">系统平台</td>
+                                <td class="bf">2018年调研平台使用租金</td>
+                                <td class="input-bf">2018年调研平台使用租金2018年调研平台使用租金2018年调研平台使用租金</td>
+                                <td class="bf">60000/年</td>
+                                <td class="remove-bf">移除</td>
+                            </tr>
+                            <tr>
+                                <td class="bf first">3</td>
+                                <td class="bf">系统平台</td>
+                                <td class="input-bf input-box">系统搭建及租用</td>
+                                <td class="bf lf">系统平台搭建&2018年调研平台使用租金</td>
+                                <td class="bf">60000/年</td>
+                                <td class="input-bf">系统平台</td>
+                                <td class="bf">2018年调研平台使用租金</td>
+                                <td class="input-bf">2018年调研平台使用租金2018年调研平台使用租金2018年调研平台使用租金</td>
+                                <td class="bf">60000/年</td>
+                                <td class="remove-bf">移除</td>
+                            </tr>
+                            <tr>
+                                <td class="bf first">4</td>
+                                <td class="bf">系统平台</td>
+                                <td class="input-bf input-box">系统搭建及租用</td>
+                                <td class="bf lf">系统平台搭建&2018年调研平台使用租金</td>
+                                <td class="bf">60000/年</td>
+                                <td class="input-bf">系统平台</td>
+                                <td class="bf">2018年调研平台使用租金</td>
+                                <td class="input-bf">2018年调研平台使用租金2018年调研平台使用租金2018年调研平台使用租金</td>
+                                <td class="bf">60000/年</td>
+                                <td class="remove-bf">移除</td>
+                            </tr>
+                            <tr>
+                                <td class="bf first">5</td>
+                                <td class="bf">系统平台</td>
+                                <td class="input-bf input-box">系统搭建及租用</td>
+                                <td class="bf lf">系统平台搭建&2018年调研平台使用租金</td>
+                                <td class="bf">60000/年</td>
+                                <td class="input-bf">系统平台</td>
+                                <td class="bf">2018年调研平台使用租金</td>
+                                <td class="input-bf">2018年调研平台使用租金2018年调研平台使用租金2018年调研平台使用租金</td>
+                                <td class="bf">60000/年</td>
+                                <td class="remove-bf">移除</td>
+                            </tr>
+                        </tbody>
+                        
+                    </table>
+                </div>
+				<div class="tbl-header blue total-header">
+                    <table>
+                        <colgroup>
+                            <col style="width: 59px;">
+                        	<col style="width: 131px;">
+                            <col style="width: 140px;">
+                            <col style="width: 170px;">
+                            <col style="width: 130px;">
+                            <col style="width: 200px;">
+                            <col style="width: 240px;">
+                            <col style="width: 560px;">
+                            <col style="width: 178px;">
+                            <col style="width: 59px;">
+                        </colgroup>
+                        <tbody>
+                            <tr class="top-tr">
+                                <td class="blue bd-no" colspan="10">
+                                    <span>合计：￥1000000</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        
+        <!--组织能力打造-->
+        <div class="layout-table one">
+            <div class="layout-table-header blue">
+                <span class="span-7"></span>
+                <span class="span-10">
+                    	组织能力打造（含诊断/调研）
+                </span>
+                <span class="span-7"></span>
+            </div>
+            <div class="layout-table-content tbl tbl-simple tbl-striped">
+                <div class="tbl-header blue">
+                    <table>
+                        <colgroup>
+                            <col style="width: 100px;">
+                            <col style="width: 80px;">
+                            <col style="width: 150px;">
+                            <col style="width: 300px;">
+                            <col style="width: 91px;">
+                            <col style="width: 29px;">
+                        </colgroup>
+                        <tbody>
+                            <tr class="head-tr">
+                                <td rowspan="2" class="blue">
+                                    <span>组织能力诊断</span>
+                                </td>
+                                <td class="blue">
+                                    <span>模块</span>
+                                </td>
+                                <td class="blue">
+                                    <span>服务内容</span>
+                                </td>
+                                <td class="blue">
+                                    <span>交付物（标准项目包）</span>
+                                </td>
+                                <td class="blue">
+                                    <span>价格</span>
+                                </td>
+                                <td class="blue input-top">
+									<input type="checkbox" name="checkbox0" value="option0">
+									<span class="checkbox-wrapper"></span>
+									<span class="checked"></span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="tbl-content">
+                    <table>
+                        <colgroup>
+                            <col style="width: 116px;">
+                            <col style="width: 93px;">
+                            <col style="width: 174px;">
+                            <col style="width: 347px;">
+                            <col style="width: 105px;">
+                            <col style="width: 33px;">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <td class="blue bt" rowspan="2">OCA</td>
+                                <td class="bf" rowspan="2">前期宣导</td>
+                                <td class="bf" rowspan="2">宣导支持</td>
+                                <td class="bf lf" rowspan="2">宣导内容包括项目目标、价值、方法论、流程及后续推动等方面，由KNX 高级顾问主导，预计时长1小时。</td>
+                                <td class="bf" rowspan="2">￥10000</td>
+                                <td class="input-bf" rowspan="2">
+                                	<label class="checkbox">
+										<input type="checkbox" name="checkbox0" value="option0">
+										<span class="checkbox-label"></span>
+									</label>
+                                </td>
+                            </tr>
+                            <tr></tr>
+                            <tr>
+                                <td class="blue bt">标准版</td>
+                                <td class="bf" rowspan="8">系统平台</td>
+                                <td class="input-bf input-box">
+                                	系统搭建及租用
+                                	<label class="checkbox">
+										<input type="checkbox" name="checkbox2_1" value="option2_1">
+										<span class="checkbox-label"></span>
+									</label>
+                                </td>
+                                <td class="bf lf">系统平台搭建&2018年调研平台使用租金</td>
+                                <td class="bf" rowspan="3">60000/年</td>
+                                <td class="input-bf" rowspan="3">
+                                	<label class="checkbox">
+										<input type="checkbox" name="checkbox2" value="option2">
+										<span class="checkbox-label"></span>
+									</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="blue last" rowspan="25"></td>
+                                <td class="input-bf input-box" rowspan="2">
+                                	问卷配置和调试
+                                	<label class="checkbox">
+										<input type="checkbox" name="checkbox2_2" value="option2_2">
+										<span class="checkbox-label"></span>
+									</label>
+                                </td>
+                                <td class="bf lf" rowspan="2">设置问卷，匹配系统，人员架构等信息调试核对，信息收集校对，人工配置系统。</td>
+                            </tr>
+                            <tr></tr>
+                            <tr>
+                            	<td class="bf" rowspan="3">后台管理账号</td>
+                                <td class="bf lf" rowspan="3">调研结束后，后台系统管理员账号开放，每个问卷对应一家专业子公司对应一个系统管理员账号（可由内部根据具体需求进行更多数据整理分析）。</td>
+                                <td class="bf" rowspan="3">10000/年/账号</td>
+                                <td class="input-bf" rowspan="3">
+                                	<label class="checkbox">
+										<input type="checkbox" name="checkbox3" value="option3">
+										<span class="checkbox-label"></span>
+									</label>
+                                </td>
+                            </tr>
+                            <tr></tr>
+                            <tr></tr>
+                            <tr>
+                                <td class="bf"rowspan="2">平台使用培训</td>
+                                <td class="bf lf" rowspan="2">针对项目组成员系统使用培训，预计时长2小时（电话形式）</td>
+                                <td class="bf" rowspan="2">￥20000</td>
+                                <td class="input-bf" rowspan="2">
+                                	<label class="checkbox">
+										<input type="checkbox" name="checkbox4" value="option4">
+										<span class="checkbox-label"></span>
+									</label>
+                                </td>
+                            </tr>
+                            <tr></tr>
+                            <tr>
+                                <td class="bf" rowspan="2">线下访谈</td>
+                                <td class="bf" rowspan="2">线下访谈</td>
+                                <td class="bf lf" rowspan="2">由顾问团队实施访谈（2天访谈，1-1高管访谈10-12场+焦点小组访谈2-3场）</td>
+                            	<td class="bf" rowspan="2">￥180000</td>
+                            	<td class="input-bf" rowspan="2">
+                                	<label class="checkbox">
+										<input type="checkbox" name="checkbox5" value="option5">
+										<span class="checkbox-label"></span>
+									</label>
+                                </td>
+                            </tr>
+                            <tr></tr>
+                            <tr>
+                                <td class="bf" rowspan="8">标准及定制化报告</td>
+                                <td class="bf">机出数据报告（PDF）</td>
+                                <td class="bf lf">由系统导出的基础标准版组织能力诊断报告</td>
+                                <td class="bf">￥10000</td>
+                                <td class="input-bf">
+                                	<label class="checkbox">
+										<input type="checkbox" name="checkbox6" value="option6">
+										<span class="checkbox-label"></span>
+									</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bf" rowspan="2">内部人口维度细分数据报告 (Excel)</td>
+                                <td class="bf lf" rowspan="2">针对内部细分人口维度（人口标签），提供细分数据excel报告</td>
+                                <td class="bf" rowspan="2">￥10000</td>
+                                <td class="input-bf" rowspan="2">
+                                	<label class="checkbox">
+										<input type="checkbox" name="checkbox7" value="option7">
+										<span class="checkbox-label"></span>
+									</label>
+                                </td>
+                            </tr>
+                            <tr></tr>
+                            <tr>
+                                <td class="bf" rowspan="3">针对性定量+定性分析报告（PDF）</td>
+                                <td class="bf lf" rowspan="3">针对加入访谈的完整“组织能力诊断”项目，提供定量（线上调研）+定性（线下访谈）分析报告，含关键分析结果、顾问关键发现与建议</td>
+                                <td class="bf" rowspan="3">￥80000</td>
+                                <td class="input-bf" rowspan="3">
+                                	<label class="checkbox">
+										<input type="checkbox" name="checkbox8" value="option8">
+										<span class="checkbox-label"></span>
+									</label>
+                                </td>
+                            </tr>
+                            <tr></tr>
+                            <tr></tr>
+                            <tr>
+                            	<td class="bf" rowspan="2">组织能力白皮书（PDF）</td>
+                            	<td class="bf lf" rowspan="2">针对2018年组织能力调研制作的白皮书（预计2018年10月提供）</td>
+                            	<td class="bf" rowspan="2">免费赠送</td>
+                            	<td class="input-bf" rowspan="2">
+                                	<label class="checkbox">
+										<input type="checkbox" name="checkbox9" value="option9">
+										<span class="checkbox-label"></span>
+									</label>
+                                </td>
+                            </tr>
+                            <tr></tr>
+                             <tr>
+                             	<td class="bf last" rowspan="4">报告解读汇报</td>
+                            	<td class="bf last" rowspan="4">报告解读汇报工作坊</td>
+                            	<td class="bf lf last" rowspan="4">完整“组织能力诊断”项目报告解读汇报工作坊，由杨国安教授认证主顾问+高级顾问主导。0.5天，含工作坊前期沟通（CEO，1小时），工作坊中定量+定性报告解读、顾问关键发现&建议、高管讨论引导、整体行动方案共识产出等。</td>
+                            	<td class="bf last" rowspan="4">￥60000</td>
+                            	<td class="input-bf" rowspan="4">
+                                	<label class="checkbox">
+										<input type="checkbox" name="checkbox10" value="option10">
+										<span class="checkbox-label"></span>
+									</label>
+                                </td>
+                            </tr>
+                        </tbody>
+                        
+                    </table>
+                </div>
+            </div>
+        	<div class="layout-table-content tbl tbl-simple tbl-striped tbl-bottom">
+                <div class="tbl-header blue">
+                    <table>
+                        <colgroup>
+                            <col style="width: 100px;">
+                            <col style="width: 80px;">
+                            <col style="width: 150px;">
+                            <col style="width: 300px;">
+                            <col style="width: 91px;">
+                            <col style="width: 29px;">
+                        </colgroup>
+                        <tbody>
+                            <tr class="bt">
+                                <td rowspan="2" class="blue">
+                                    <span></span>
+                                </td>
+                                <td class="blue">
+                                    <span></span>
+                                </td>
+                                <td class="blue">
+                                    <span></span>
+                                </td>
+                                <td class="blue">
+                                    <span>标准版“组织能力诊断OCA”项目合计</span>
+                                </td>
+                                <td class="blue">
+                                    <span>400,000起</span>
+                                </td>
+                                <td class="blue">
+                                    
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="tbl-content">
+                    <table>
+                        <colgroup>
+                            <col style="width: 116px;">
+                            <col style="width: 93px;">
+                            <col style="width: 174px;">
+                            <col style="width: 347px;">
+                            <col style="width: 105px;">
+                            <col style="width: 33px;">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <td class="blue bt last" rowspan="3">组织能力课程</td>
+                                <td class="bf last" rowspan="4">《组织能力的杨三角》培训课程（1-3天版本）</td>
+                                <td class="bf no-bt">杨国安教授亲授课程</td>
+                                <td class="bf lf">学员：40位以内</td>
+                                <td class="bf">400,000/天</td>
+                                <td class="input-bf">
+                                	<label class="radio">
+								        <input type="radio" name="radio1" value="option1">
+								    		<span class="radio-label"></span>
+								    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bf no-tp">学员建议：核心高管团队</td>
+                                <td class="bf lf">学员：41-50位以内</td>
+                                <td class="bf">500,000/天</td>
+                                <td class="input-bf">
+                                	<label class="radio">
+								        <input type="radio" name="radio1" value="option2">
+								    		<span class="radio-label"></span>
+								    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bf no-bt">组织能力认证讲师 培训课程 </td>
+                                <td class="bf lf">学员：40位以内</td>
+                                <td class="bf">80,000/天</td>
+                                <td class="input-bf">
+                                	<label class="radio">
+								        <input type="radio" name="radio2" value="option1">
+								    		<span class="radio-label"></span>
+								    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                            	<td class="blue last"></td>
+                            	<td class="bf last no-tp" rowspan="3">学员建议：中高层管理者</td>
+                                <td class="bf lf last">学员：41-50位以内</td>
+                                <td class="bf last">100,000/天</td>
+                                <td class="input-bf">
+                                	<label class="radio">
+								        <input type="radio" name="radio2" value="option2">
+								    		<span class="radio-label"></span>
+								    </label>
+                                </td>
+                            </tr>
+                        </tbody>
+                        
+                    </table>
+                </div>
+            	<div class="tbl-header blue">
+                    <table>
+                        <colgroup>
+                            <col style="width: 100px;">
+                            <col style="width: 80px;">
+                            <col style="width: 150px;">
+                            <col style="width: 300px;">
+                            <col style="width: 91px;">
+                            <col style="width: 29px;">
+                        </colgroup>
+                        <tbody>
+                            <tr class="top-tr">
+                                <td class="blue top-td">
+                                    <span>总费用</span>
+                                </td>
+                                <td class="blue bd-no" colspan="5">
+                                    <span>合计：￥1000000</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+        	</div>
+        </div>
+    
+    	<!--员工敬业度/满意度及其他调研-->
+    	<div class="layout-table two">
+            <div class="layout-table-header blue">
+                <span class="span-7"></span>
+                <span class="span-10">
+                    	员工敬业度/满意度及其他调研
+                </span>
+                <span class="span-7"></span>
+            </div>
+            <div class="layout-table-content tbl tbl-simple tbl-striped">
+                <div class="tbl-header blue">
+                    <table>
+                        <colgroup>
+                            <col style="width: 100px;">
+                            <col style="width: 100px;">
+                            <col style="width: 151px;">
+                            <col style="width: 29px;">
+                        </colgroup>
+                        <tbody>
+                            <tr class="head-tr">
+                                <td class="blue" style="border-bottom:1px solid #fff;">
+                                    <span>可选模块</span>
+                                </td>
+                                <td class="blue">
+                                    <span>单价</span>
+                                </td>
+                                <td class="blue">
+                                    <span>预定数量</span>
+                                </td>
+                                <td class="blue input-top">
+									<input type="checkbox" name="checkbox2" value="option0">
+									<span class="checkbox-wrapper"></span>
+									<span class="checked"></span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="tbl-content">
+                    <table>
+                        <colgroup>
+                            <col style="width:100px;">
+                            <col style="width: 100px;">
+                            <col style="width: 151px;">
+                            <col style="width: 29px;">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <td class="blue bt">访谈每增加一人</td>
+                                <td class="bf">￥5000</td>
+                                <td class="input-bf">
+                                	<input type="text" class="form-control" placeholder="访谈人数" aria-describedby="basic-addon1">
+                            		<span class="tx-label">人</span>
+                                </td>
+                                <td class="input-bf">
+                                	<label class="checkbox">
+										<input type="checkbox" name="checkbox2" value="option0">
+										<span class="checkbox-label"></span>
+									</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="blue bt">分公司/部门报告</td>
+                                <td class="bf">￥5000</td>
+                                <td class="input-bf">
+                                	<input type="text" class="form-control" placeholder="报告份数" aria-describedby="basic-addon1">
+                            		<span class="tx-label">份</span>
+                                </td>
+                                <td class="input-bf">
+                                	<label class="checkbox">
+										<input type="checkbox" name="checkbox2" value="option0">
+										<span class="checkbox-label"></span>
+									</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="blue bt">分公司/部门汇报</td>
+                                <td class="bf">￥10000</td>
+                                <td class="input-bf">
+                                	<input type="text" class="form-control" placeholder="汇报份数" aria-describedby="basic-addon1">
+                            		<span class="tx-label">份</span>
+                                </td>
+                                <td class="input-bf">
+                                	<label class="checkbox">
+										<input type="checkbox" name="checkbox2" value="option0">
+										<span class="checkbox-label"></span>
+									</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="blue bt">焦点小组访谈</td>
+                                <td class="bf">￥6000</td>
+                                <td class="input-bf">
+                                	<input type="text" class="form-control" placeholder="访谈场数" aria-describedby="basic-addon1">
+                            		<span class="tx-label">场</span>
+                                </td>
+                                <td class="input-bf">
+                                	<label class="checkbox">
+										<input type="checkbox" name="checkbox2" value="option0">
+										<span class="checkbox-label"></span>
+									</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="blue bt">冠军培训（半天）</td>
+                                <td class="bf">￥30000</td>
+                                <td class="input-bf">
+                            		<input type="text" class="form-control" placeholder="培训次数" aria-describedby="basic-addon1">
+                            		<span class="tx-label">次</span>
+                                </td>
+                                <td class="input-bf">
+                                	<label class="checkbox">
+										<input type="checkbox" name="checkbox2" value="option0">
+										<span class="checkbox-label"></span>
+									</label>
+                                </td>
+                            </tr>
+                        </tbody>
+                        
+                    </table>
+                </div>
+            </div>
+        	<div class="layout-table-content tbl tbl-simple tbl-striped tbl-bottom">
+                <div class="tbl-header blue">
+                    <table>
+                        <colgroup>
+                            <col style="width: 100px;">
+                            <col style="width: 100px;">
+                            <col style="width: 151px;">
+                            <col style="width: 29px;">
+                        </colgroup>
+                        <tbody>
+                            <tr class="bt">
+                                <td class="blue">
+                                    <span>VX-棱镜系统</span>
+                                </td>
+                                <td class="blue">
+                                    <span>单价</span>
+                                </td>
+                                <td class="blue">
+                                    <span>天数</span>
+                                </td>
+                                <td class="blue">
+                                   <span></span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="tbl-content">
+                    <table>
+                        <colgroup>
+                            <col style="width: 100px;">
+                            <col style="width: 100px;">
+                            <col style="width: 151px;">
+                            <col style="width: 29px;">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <td class="blue bt" style="border-top:1px solid #fff;">500人以内</td>
+                                <td class="bf">￥40000</td>
+                                <td class="bf">90</td>
+                                <td class="input-bf">
+                                	<label class="radio">
+								        <input type="radio" name="radio3" value="option1">
+								    	<span class="radio-label"></span>
+								    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                            	<td class="blue bt">500-1000</td>
+                                <td class="bf">￥50000</td>
+                                <td class="bf">90</td>
+                                <td class="input-bf">
+                                	<label class="radio">
+								        <input type="radio" name="radio3" value="option2">
+								    	<span class="radio-label"></span>
+								    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="blue bt">1000-2000</td>
+                                <td class="bf">￥60000</td>
+                                <td class="bf">90</td>
+                                <td class="input-bf">
+                                	<label class="radio">
+							        	<input type="radio" name="radio3" value="option3">
+							    		<span class="radio-label"></span>
+								    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                            	<td class="blue bt">2000-5000</td>
+                                <td class="bf">￥100000</td>
+                                <td class="bf">90</td>
+                                <td class="input-bf">
+                                	<label class="radio">
+								        <input type="radio" name="radio3" value="option4">
+								    	<span class="radio-label"></span>
+								    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                            	<td class="blue bt">5000-10000</td>
+                                <td class="bf">￥150000</td>
+                                <td class="bf">90</td>
+                                <td class="input-bf">
+                                	<label class="radio">
+								        <input type="radio" name="radio3" value="option5">
+								    	<span class="radio-label"></span>
+								    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                            	<td class="blue bt">10000以上</td>
+                                <td class="bf">￥200000</td>
+                                <td class="bf">90</td>
+                                <td class="input-bf">
+                                	<label class="radio">
+								        <input type="radio" name="radio3" value="option6">
+								    		<span class="radio-label"></span>
+								    </label>
+                                </td>
+                            </tr>
+                        </tbody>
+                        
+                    </table>
+                </div>
+            	<div class="tbl-header blue">
+                    <table>
+                        <colgroup>
+                            <col style="width: 100px;">
+                            <col style="width: 100px;">
+                            <col style="width: 151px;">
+                            <col style="width: 29px;">
+                        </colgroup>
+                        <tbody>
+                            <tr class="top-tr">
+                                <td class="blue top-td">
+                                    <span>总费用</span>
+                                </td>
+                                <td class="blue bd-no" colspan="3">
+                                    <span>合计：￥1000000</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+        	</div>
+        </div>
+    
+    	<!--企业文化建设-->
+    	<div class="layout-table three">
+            <div class="layout-table-header blue">
+                <span class="span-7"></span>
+                <span class="span-10">
+                    	企业文化建设
+                </span>
+                <span class="span-7"></span>
+            </div>
+            <div class="layout-table-content tbl tbl-simple tbl-striped">
+                <div class="tbl-header blue">
+                    <table>
+                        <colgroup>
+                            <col style="width: 100px;">
+                            <col style="width: 100px;">
+                            <col style="width: 151px;">
+                            <col style="width: 29px;">
+                        </colgroup>
+                        <tbody>
+                            <tr class="head-tr">
+                                <td class="blue" style="border-bottom:1px solid #fff;">
+                                    <span>可选模块</span>
+                                </td>
+                                <td class="blue">
+                                    <span>单价</span>
+                                </td>
+                                <td class="blue">
+                                    <span>预定数量</span>
+                                </td>
+                                <td class="blue input-top">
+									<input type="checkbox" name="checkbox2" value="option0">
+									<span class="checkbox-wrapper"></span>
+									<span class="checked"></span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="tbl-content">
+                    <table>
+                        <colgroup>
+                            <col style="width:100px;">
+                            <col style="width: 100px;">
+                            <col style="width: 151px;">
+                            <col style="width: 29px;">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <td class="blue bt">访谈每增加一人</td>
+                                <td class="bf">￥5000</td>
+                                <td class="input-bf">
+                                	<input type="text" class="form-control" placeholder="访谈人数" aria-describedby="basic-addon1">
+                            		<span class="tx-label">人</span>
+                                </td>
+                                <td class="input-bf">
+                                	<label class="checkbox">
+										<input type="checkbox" name="checkbox2" value="option0">
+										<span class="checkbox-label"></span>
+									</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="blue bt">分公司/部门报告</td>
+                                <td class="bf">￥5000</td>
+                                <td class="input-bf">
+                                	<input type="text" class="form-control" placeholder="报告份数" aria-describedby="basic-addon1">
+                            		<span class="tx-label">份</span>
+                                </td>
+                                <td class="input-bf">
+                                	<label class="checkbox">
+										<input type="checkbox" name="checkbox2" value="option0">
+										<span class="checkbox-label"></span>
+									</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="blue bt">分公司/部门汇报</td>
+                                <td class="bf">￥10000</td>
+                                <td class="input-bf">
+                                	<input type="text" class="form-control" placeholder="汇报份数" aria-describedby="basic-addon1">
+                            		<span class="tx-label">份</span>
+                                </td>
+                                <td class="input-bf">
+                                	<label class="checkbox">
+										<input type="checkbox" name="checkbox2" value="option0">
+										<span class="checkbox-label"></span>
+									</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="blue bt">焦点小组访谈</td>
+                                <td class="bf">￥6000</td>
+                                <td class="input-bf">
+                                	<input type="text" class="form-control" placeholder="访谈场数" aria-describedby="basic-addon1">
+                            		<span class="tx-label">场</span>
+                                </td>
+                                <td class="input-bf">
+                                	<label class="checkbox">
+										<input type="checkbox" name="checkbox2" value="option0">
+										<span class="checkbox-label"></span>
+									</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="blue bt">冠军培训（半天）</td>
+                                <td class="bf">￥30000</td>
+                                <td class="input-bf">
+                            		<input type="text" class="form-control" placeholder="培训次数" aria-describedby="basic-addon1">
+                            		<span class="tx-label">次</span>
+                                </td>
+                                <td class="input-bf">
+                                	<label class="checkbox">
+										<input type="checkbox" name="checkbox2" value="option0">
+										<span class="checkbox-label"></span>
+									</label>
+                                </td>
+                            </tr>
+                        </tbody>
+                        
+                    </table>
+                </div>
+            </div>
+        	<div class="layout-table-content tbl tbl-simple tbl-striped tbl-bottom">
+                <div class="tbl-header blue">
+                    <table>
+                        <colgroup>
+                            <col style="width: 100px;">
+                            <col style="width: 100px;">
+                            <col style="width: 151px;">
+                            <col style="width: 29px;">
+                        </colgroup>
+                        <tbody>
+                            <tr class="bt">
+                                <td class="blue">
+                                    <span>VX-棱镜系统</span>
+                                </td>
+                                <td class="blue">
+                                    <span>单价</span>
+                                </td>
+                                <td class="blue">
+                                    <span>天数</span>
+                                </td>
+                                <td class="blue">
+                                   <span></span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="tbl-content">
+                    <table>
+                        <colgroup>
+                            <col style="width: 100px;">
+                            <col style="width: 100px;">
+                            <col style="width: 151px;">
+                            <col style="width: 29px;">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <td class="blue bt" style="border-top:1px solid #fff;">500人以内</td>
+                                <td class="bf">￥40000</td>
+                                <td class="bf">90</td>
+                                <td class="input-bf">
+                                	<label class="radio">
+								        <input type="radio" name="radio3" value="option1">
+								    	<span class="radio-label"></span>
+								    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                            	<td class="blue bt">500-1000</td>
+                                <td class="bf">￥50000</td>
+                                <td class="bf">90</td>
+                                <td class="input-bf">
+                                	<label class="radio">
+								        <input type="radio" name="radio3" value="option2">
+								    	<span class="radio-label"></span>
+								    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="blue bt">1000-2000</td>
+                                <td class="bf">￥60000</td>
+                                <td class="bf">90</td>
+                                <td class="input-bf">
+                                	<label class="radio">
+							        	<input type="radio" name="radio3" value="option3">
+							    		<span class="radio-label"></span>
+								    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                            	<td class="blue bt">2000-5000</td>
+                                <td class="bf">￥100000</td>
+                                <td class="bf">90</td>
+                                <td class="input-bf">
+                                	<label class="radio">
+								        <input type="radio" name="radio3" value="option4">
+								    	<span class="radio-label"></span>
+								    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                            	<td class="blue bt">5000-10000</td>
+                                <td class="bf">￥150000</td>
+                                <td class="bf">90</td>
+                                <td class="input-bf">
+                                	<label class="radio">
+								        <input type="radio" name="radio3" value="option5">
+								    	<span class="radio-label"></span>
+								    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                            	<td class="blue bt">10000以上</td>
+                                <td class="bf">￥200000</td>
+                                <td class="bf">90</td>
+                                <td class="input-bf">
+                                	<label class="radio">
+								        <input type="radio" name="radio3" value="option6">
+								    		<span class="radio-label"></span>
+								    </label>
+                                </td>
+                            </tr>
+                        </tbody>
+                        
+                    </table>
+                </div>
+            	<div class="tbl-header blue">
+                    <table>
+                        <colgroup>
+                            <col style="width: 100px;">
+                            <col style="width: 100px;">
+                            <col style="width: 151px;">
+                            <col style="width: 29px;">
+                        </colgroup>
+                        <tbody>
+                            <tr class="top-tr">
+                                <td class="blue top-td">
+                                    <span>总费用</span>
+                                </td>
+                                <td class="blue bd-no" colspan="3">
+                                    <span>合计：￥1000000</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+        	</div>
+        </div>
+    
+    	<!--3P(岗位/薪酬/绩效)-->
+    	<div class="layout-table four">
+            <div class="layout-table-header blue">
+                <span class="span-7"></span>
+                <span class="span-10">
+                    	3P（岗位/薪酬/绩效）
+                </span>
+                <span class="span-7"></span>
+            </div>
+            <div class="layout-table-content tbl tbl-simple tbl-striped">
+                <div class="tbl-header blue">
+                    <table>
+                        <colgroup>
+                            <col style="width: 120px;">
+                            <col style="width: 200px;">
+                            <col style="width: 29px;">
+                        </colgroup>
+                        <tbody>
+                            <tr class="head-tr">
+                                <td class="blue" style="border-bottom:1px solid #fff;">
+                                    <span>模块</span>
+                                </td>
+                                <td class="blue">
+                                    <span>建议定价原则</span>
+                                </td>
+                                <td class="blue input-top">
+									<input type="checkbox" name="checkbox2" value="option0">
+									<span class="checkbox-wrapper"></span>
+									<span class="checked"></span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="tbl-content">
+                    <table>
+                        <colgroup>
+                            <col style="width: 120px;">
+                            <col style="width: 200px;">
+                            <col style="width: 29px;">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <td class="blue bt lf">1.启动</td>
+                                <td class="bf lf" rowspan="7">
+                                	1.右边表格从2-6共5个模块
+                                	<br>
+                                	2.每个模块原则报价50万
+                                	<br>
+                                	3.个别项目较小另外估价
+                                </td>
+                                <td class="input-bf">
+                                	<!--<label class="checkbox">
+										<input type="checkbox" name="checkbox2" value="option0">
+										<span class="checkbox-label"></span>
+									</label>-->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="blue bt lf">2.人力资源体系诊断</td>
+                                <td class="input-bf">
+                                	<label class="checkbox">
+										<input type="checkbox" name="checkbox2" value="option0">
+										<span class="checkbox-label"></span>
+									</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="blue bt lf">3.组织与职责梳理</td>
+                                <td class="input-bf">
+                                	<label class="checkbox">
+										<input type="checkbox" name="checkbox2" value="option0">
+										<span class="checkbox-label"></span>
+									</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="blue bt lf">4.岗位评估/职级体系建立</td>
+                                <td class="input-bf">
+                                	<label class="checkbox">
+										<input type="checkbox" name="checkbox2" value="option0">
+										<span class="checkbox-label"></span>
+									</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="blue bt lf">5.绩效管理体系优化</td>
+                                <td class="input-bf">
+                                	<label class="checkbox">
+										<input type="checkbox" name="checkbox2" value="option0">
+										<span class="checkbox-label"></span>
+									</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="blue bt lf">6.科学薪酬体系建立</td>
+                                <td class="input-bf">
+                                	<label class="checkbox">
+										<input type="checkbox" name="checkbox2" value="option0">
+										<span class="checkbox-label"></span>
+									</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="blue bt lf">7.跟进结项</td>
+                                <td class="input-bf">
+                                	<!--<label class="checkbox">
+										<input type="checkbox" name="checkbox2" value="option0">
+										<span class="checkbox-label"></span>
+									</label>-->
+                                </td>
+                            </tr>
+                        </tbody>
+                        
+                    </table>
+                </div>
+                <div class="tbl-header blue">
+                    <table>
+                        <colgroup>
+                            <col style="width: 120px;">
+                            <col style="width: 200px;">
+                            <col style="width: 29px;">
+                        </colgroup>
+                        <tbody>
+                            <tr class="top-tr">
+                                <td class="blue top-td" colspan="3">
+                                    <span>合计：￥1000000</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    	
+    
+    </div>
+
+    <script>
+       
+    </script>
+
+</body>
+</html>
